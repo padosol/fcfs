@@ -9,8 +9,8 @@ import jakarta.persistence.Id
 class Coupon(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id: Long,
-    val userId: String
+    var id: Long? = null,
+    val userId: Long
 ) {
 
 }
